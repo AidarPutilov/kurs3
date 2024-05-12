@@ -52,14 +52,14 @@ Visa Platinum 7000 79** **** 6361 -> Счет **9638
 
 ## Технологии
 
-colorama   0.4.6
-coverage   7.5.1
-iniconfig  2.0.0
-packaging  24.0
-pathlib    1.0.1
-pluggy     1.5.0
-pytest     8.2.0
-pytest-cov 5.0.0
+- colorama   0.4.6
+- coverage   7.5.1
+- iniconfig  2.0.0
+- packaging  24.0
+- pathlib    1.0.1
+- pluggy     1.5.0
+- pytest     8.2.0
+- pytest-cov 5.0.0
 
 ## Клонирование проекта:
 
