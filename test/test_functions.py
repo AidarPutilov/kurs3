@@ -1,4 +1,4 @@
-from src.functions import get_executed_operations
+from src.functions import get_executed_operations, get_operation_instances
 
 
 def test_get_executed_operations():
