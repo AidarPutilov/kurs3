@@ -2,6 +2,7 @@ from datetime import datetime
 
 
 class Operation:
+    """ Класс, описывающий операцию """
 
     def __init__(
             self,
@@ -71,41 +72,6 @@ class Operation:
         return self.date_time > other.date_time
 
     def __str__(self):
-        return f'{self.date}'
-
-
-items = [{'id': 441945886,
-         'state': 'EXECUTED',
-         'date': '2019-08-26T10:50:58.294041',
-         'operationAmount': {'amount': '31957.58', 'currency': {'name': 'руб.', 'code': 'RUB'}},
-         'description': 'Перевод организации',
-         'from': 'Maestro 1596837868705199',
-         'to': 'Счет 64686473678894779589'},
-        {'id': 41428829,
-         'state': 'EXECUTED',
-         'date': '2019-07-03T18:35:29.512364',
-         'operationAmount': {'amount': '8221.37', 'currency': {'name': 'USD', 'code': 'USD'}},
-         'description': 'Перевод организации',
-         'from': 'MasterCard 7158300734726758',
-         'to': 'Счет 35383033474447895560'},
-        {'id': 587085106,
-         'state': 'EXECUTED',
-         'date': '2018-03-23T10:45:06.972075',
-         'operationAmount': {'amount': '48223.05', 'currency': {'name': 'руб.', 'code': 'RUB'}},
-         'description': 'Открытие вклада',
-         'to': 'Счет 41421565395219882431'}]
-
-#i = 2
-#op = Operation(items[i]['id'],
-#               items[i]['state'],
-#               items[i]['date'],
-#               items[i]['operationAmount']['amount'],
-#               items[i]['operationAmount']['currency']['name'],
-#               items[i]['description'],
-#               items[i].get('from'),
-#               items[i].get('to'))
-
-
-#print(op.get_status())
-#print(op.from_number_encript)
-#print(op.to_number_encript)
+        return f'Operation(pk={self.pk}, state={self.state}, date={self.date}, amount={self.amount}), ' \
+                f'currency={self.currency}, description={self.description}, ' \
+                f'from={self.from_type} {self.from_number}, to={self.to_type} {self.to_number})'
